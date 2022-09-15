@@ -4,7 +4,7 @@ const router = Router();
 
 router.get("/home", (req, res) => {
   try {
-    res.render("home");
+    res.render("home.hbs");
   } catch (err) {
     console.log("Internal Server Error");
     err;

@@ -1,0 +1,58 @@
+<div class="comment">
+  <div class="comment_menu">
+    <h1 class="comment_menu-title">IZOHLAR</h1>
+    <img
+      class="comment_menu-img"
+      src="https://nubartassociates.com/_content/revolutionslider/1980x500-6.png"
+      alt=""
+    />
+  </div>
+  <form class="form-comment" action="/comment/add" method="post">
+    <input
+      type="text"
+      name="name"
+      placeholder="NAME"
+      class="input input-bordered w-full max-w-xs"
+    />
+    <input
+      type="text"
+      name="surname"
+      placeholder="SURNAME"
+      class="input input-bordered w-full max-w-xs"
+    />
+    <textarea
+      name="message"
+      placeholder="MESSAGE"
+      class="input input-bordered w-full max-w-xs"
+    ></textarea>
+    <button class="btn">SEND</button>
+  </form>
+  <br />
+  <ul style="margin: 700px auto; width: 60%;">
+    {{#each comment}}
+      <li
+        style="background-color: rgba(143, 143, 143, 0.192); display: flex; flex-direction: column; border-radius: 20px;"
+      >
+        <div>
+          <br />
+          <label style="font-size: 15px;">          {{name}}</label>
+          <label style="font-size: 15px;">{{surname}}</label>
+          <br />
+        </div>
+        <label
+          style="font-size: 20px; flex-wrap: wrap;"
+        >        {{message}}</label>
+        <div>
+          <a
+            href="comment/delete/{{_id}}"
+            style="color: red; margin-left: 90%; margin-top: -6%;"
+            class="btn btn-ghost btn-sm"
+          >
+            X
+          </a>
+        </div>
+      </li>
+      <br />
+    {{/each}}
+  </ul>
+</div>
