@@ -1,10 +1,10 @@
-import { Router } from "express";
+import Router from "express";
 
 const router = Router();
 
-router.get("/home", (req, res) => {
+router.get("/pricing", (req, res) => {
   try {
-    res.render("home");
+    res.render("pricing");
   } catch (err) {
     console.log("Internal Server Error");
     err;

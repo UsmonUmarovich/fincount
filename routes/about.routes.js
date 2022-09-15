@@ -1,9 +1,14 @@
-import Router from "express"
+import Router from "express";
 
-const router = Router()
+const router = Router();
 
 router.get("/about", (req, res) => {
-    res.render("about")
-})
+  try {
+    res.render("about");
+  } catch (err) {
+    console.log("Internal Server Error");
+    err;
+  }
+});
 
 export default router;

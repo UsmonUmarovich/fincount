@@ -236,6 +236,7 @@
   flex-direction: column;
   align-items: center;
   transition: 500ms;
+  box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.557);
 }
 
 .service-card1:hover {
@@ -251,9 +252,26 @@
   align-items: center;
   flex-direction: column;
   transition: 500ms;
+  box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.557);
+}
+
+.service-card3 {
+  background-color: rgba(255, 255, 255, 0.951);
+  width: 500px;
+  border-radius: 50px;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: 500ms;
+  box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.557);
 }
 
 .service-card2:hover {
+  transform: scale(1.1);
+}
+
+.service-card3:hover {
   transform: scale(1.1);
 }
 
@@ -278,12 +296,14 @@
   color: rgb(221, 220, 220);
 }
 
-.service-3{
-  width: 50%;
+.service-3 {
   margin: 100px auto;
   margin-bottom: 70px;
-  display: flex;
-  align-content: center;
+}
+
+.service-3-about {
+  width: 50%;
+  margin: 200 auto;
 }
 
 .service-3-title {
@@ -295,4 +315,134 @@
 .service-3-desc {
   color: rgb(167, 167, 167);
   line-height: 30px;
+}
+
+.service-cards2 {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+}
+
+.pricing {
+  display: flex;
+}
+
+.pricing-title {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 5px;
+  font-size: 90px;
+  font-weight: 500;
+}
+
+.pricing-background {
+  background-color: blue;
+  height: 1080px;
+}
+
+.pricing-desc {
+  color: rgba(255, 255, 255, 0.683);
+  width: 60%;
+  margin: 0 auto;
+  line-height: 35px;
+  margin-bottom: 100px;
+}
+
+.pricing-menu {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  margin: 0 auto;
+  gap: 25px;
+}
+
+
+.pricing-menu_home {
+  border: 1px solid rgba(255, 255, 255, 0.683);
+  padding: 40px 80px;
+  color: rgba(255, 255, 255, 0.683);
+  transition: 300ms;
+}
+
+.pricing-menu_home:hover {
+  background-color: rgba(255, 255, 255, 0.683);
+  color: inherit;
+  transform: scale(1.1);
+}
+
+.pricing-menu_home:active {
+  background-color: rgba(255, 255, 255, 0.535);
+  transform: scale(0.9);
+}
+
+
+.pricing-menu_about {
+  border: 1px solid rgba(255, 255, 255, 0.683);
+  padding: 40px 80px;
+  color: rgba(255, 255, 255, 0.683);
+  transition: 300ms;
+}
+
+.pricing-menu_about:hover {
+  background-color: rgba(255, 255, 255, 0.683);
+  color: inherit;
+  transform: scale(1.1);
+}
+
+.pricing-menu_about:active {
+  background-color: rgba(255, 255, 255, 0.535);
+  transform: scale(0.9);
+}
+
+
+.pricing-menu_services{
+  border: 1px solid rgba(255, 255, 255, 0.683);
+  padding: 40px 80px;
+  color: rgba(255, 255, 255, 0.683);
+  transition: 300ms;
+}
+
+.pricing-menu_services:hover{
+  background-color: rgba(255, 255, 255, 0.683);
+  color: inherit;
+  transform: scale(1.1);
+}
+
+.pricing-menu_services:active{
+  background-color: rgba(255, 255, 255, 0.535);
+  transform: scale(0.9);
+}
+
+
+.pricing-menu_contact{
+  border: 1px solid rgba(255, 255, 255, 0.683);
+  padding: 40px 80px;
+  color: rgba(255, 255, 255, 0.683);
+  transition: 300ms;
+}
+
+.pricing-menu_contact:hover{
+  background-color: rgba(255, 255, 255, 0.683);
+  color: inherit;
+  transform: scale(1.1);
+}
+
+.pricing-menu_contact:active{
+  background-color: rgba(255, 255, 255, 0.535);
+  transform: scale(0.9);
+}
+
+.contact-menu_img{
+  position: absolute;
+}
+
+.contact-menu_title{
+  position: absolute;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 7px;
+  font-size: 80px;
+  font-weight: 600;
+  margin-left: 60px;
+  margin-top: 70px;
 }

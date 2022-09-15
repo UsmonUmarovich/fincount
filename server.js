@@ -4,6 +4,8 @@ import { engine } from "express-handlebars"
 import HomeRouter from "./routes/home.routes.js"
 import AboutRouter from "./routes/about.routes.js"
 import ServiceRouter from "./routes/services.routes.js"
+import PricingRouter from "./routes/pricing.routes.js"
+import ContactRouter from "./routes/contact.routes.js"
 
 // app
 const app = express()
@@ -25,6 +27,8 @@ app.use(express.static("public"))
 app.use(HomeRouter)
 app.use(AboutRouter)
 app.use(ServiceRouter)
+app.use(PricingRouter)
+app.use(ContactRouter)
 
 // listen server
 app.listen(8080, () => {
