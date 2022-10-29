@@ -8,6 +8,8 @@ import ServiceRouter from "./routes/services.routes.js"
 import PricingRouter from "./routes/pricing.routes.js"
 import ContactRouter from "./routes/contact.routes.js"
 import CommentRouter from "./routes/comment.routes.js"
+import LoginRouter from "./routes/login.routes.js"
+import RegisterRouter from "./routes/register.routes.js"
 // imports (end)
 
 // app (start)
@@ -37,6 +39,8 @@ app.use(ServiceRouter)
 app.use(PricingRouter)
 app.use(ContactRouter)
 app.use(CommentRouter)
+app.use(LoginRouter)
+app.use(RegisterRouter)
 // use router (end)
 
 // listen server
